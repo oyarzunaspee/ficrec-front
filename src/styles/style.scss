@@ -1,0 +1,11 @@
+$var: red;
+
+@import "./header";
+
+section {
+    @include myMixin();
+}
+
+nav {
+    @extend header; /* inherit */
+}

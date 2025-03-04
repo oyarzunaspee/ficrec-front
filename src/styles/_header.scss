@@ -1,0 +1,19 @@
+@mixin myMixin($direction) {
+    background: white;
+    flex-direction: $direction;
+}
+
+
+
+header {
+    @include myMixin(column);
+    button {
+        background: black;
+        &:hover {
+            background: green;
+        }
+        &:after {
+            background: blue;
+        }
+    }
+}
